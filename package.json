@@ -1,0 +1,26 @@
+{
+  "name": "opencode-dcg-plugin",
+  "version": "1.0.0",
+  "description": "Destructive Command Guard (dcg) plugin for OpenCode",
+  "main": "plugin/dcg-guard.js",
+  "type": "module",
+  "keywords": [
+    "opencode",
+    "dcg",
+    "destructive-command-guard",
+    "safety",
+    "plugin",
+    "ai-coding",
+    "protection"
+  ],
+  "author": "Jordan Stout",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jms830/opencode-dcg-plugin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jms830/opencode-dcg-plugin/issues"
+  },
+  "homepage": "https://github.com/jms830/opencode-dcg-plugin#readme"
+}
