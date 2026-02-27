@@ -35,7 +35,7 @@ fi
 echo ""
 echo "Testing plugin file..."
 
-PLUGIN_FILE="${HOME}/.config/opencode/plugin/dcg-guard.js"
+PLUGIN_FILE="${HOME}/.config/opencode/plugins/dcg-guard.js"
 if [ -f "$PLUGIN_FILE" ]; then
     echo "PASS: Plugin file exists"
     node --check "$PLUGIN_FILE" 2>/dev/null && echo "PASS: Plugin syntax valid" || echo "FAIL: Plugin syntax error"

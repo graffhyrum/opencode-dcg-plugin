@@ -33,7 +33,7 @@ This plugin intercepts bash commands before execution and validates them through
 git clone https://github.com/jms830/opencode-dcg-plugin.git ~/.config/opencode/opencode-dcg-plugin
 
 # Symlink the plugin
-ln -sf ~/.config/opencode/opencode-dcg-plugin/plugin/dcg-guard.js ~/.config/opencode/plugin/dcg-guard.js
+ln -sf ~/.config/opencode/opencode-dcg-plugin/plugin/dcg-guard.js ~/.config/opencode/plugins/dcg-guard.js
 
 # Restart OpenCode
 ```
@@ -46,7 +46,7 @@ mkdir -p ~/.config/opencode/plugin
 
 # Download the plugin directly
 curl -fsSL https://raw.githubusercontent.com/jms830/opencode-dcg-plugin/main/plugin/dcg-guard.js \
-  -o ~/.config/opencode/plugin/dcg-guard.js
+  -o ~/.config/opencode/plugins/dcg-guard.js
 
 # Restart OpenCode
 ```
@@ -104,14 +104,14 @@ dcg configuration is managed through dcg itself, not this plugin. See [dcg docum
 
 1. Check the plugin file exists:
    ```bash
-   ls -la ~/.config/opencode/plugin/dcg-guard.js
+   ls -la ~/.config/opencode/plugins/dcg-guard.js
    ```
 
 2. Restart OpenCode completely (not just the session)
 
 3. Check for syntax errors:
    ```bash
-   node --check ~/.config/opencode/plugin/dcg-guard.js
+   node --check ~/.config/opencode/plugins/dcg-guard.js
    ```
 
 ### dcg not found
@@ -143,7 +143,7 @@ curl -fsSL "https://raw.githubusercontent.com/Dicklesworthstone/destructive_comm
 ## Uninstall
 
 ```bash
-rm ~/.config/opencode/plugin/dcg-guard.js
+rm ~/.config/opencode/plugins/dcg-guard.js
 rm -rf ~/.config/opencode/opencode-dcg-plugin  # if cloned
 ```
 
